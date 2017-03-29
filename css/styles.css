@@ -1,0 +1,127 @@
+/* -------------------------------------------------
+ CSS file to style single page portfolio website
+ ------------------------------------------------- */
+
+/*
+Color Reference
+blue: #02b3e4;
+grey: #7d97ad;
+dark-grey: #2d3c49;
+*/
+
+/* BASE ---------------------------- */
+html{
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  font-family: 'Nunito', sans-serif;
+  color: #2d3c49;
+}
+body{
+  padding: 40px 20px;
+  flex-direction: column;
+  display: flex;
+  max-width: 1080px;
+}
+img:not(.logo){
+  max-width: 100%;
+  height: auto;
+}
+
+/* TYPOGRAPHY ---------------------------- */
+h1{
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 36px
+}
+@media screen and (max-width:680px) {
+  h1{
+    font-size: 24px
+  }
+}
+
+h2{
+  margin-top: 40px;
+}
+h3{
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 10px 0 0 0;
+  font-weight: 600;
+}
+a{
+  color: #2d3c49;
+  font-size: 14px;
+}
+
+/* HEADER ---------------------------- */
+
+  header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 3px solid #7d97ad;
+    text-align: right;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+  }
+    .logo{
+      height: 80px;
+
+    }
+    @media screen and (max-width:680px) {
+      .logo{
+        height: 60px;
+      }
+    }
+
+    .author p{
+      text-transform: uppercase;
+      margin-top: 5px;
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+
+/* MAIN ---------------------------- */
+  .main{
+    display: block;
+  }
+
+/* FEATURED ---------------------------- */
+  .featured{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+    .work{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+      width: 31%;
+    }
+    @media screen and (max-width:680px) {
+      .featured{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+      .work{
+        width: 100%;
+      }
+    }
+    .work p{
+      margin-top: 0;
+      margin-bottom: 50px;
+    }
+
+/* FOOTER ---------------------------- */
+  footer{
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #7d97ad;
+    text-align: center;
+  }
